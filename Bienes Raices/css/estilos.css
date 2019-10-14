@@ -187,7 +187,7 @@ h4 {
 
 }
 
-..contenido-anuncio h3, 
+.contenido-anuncio h3, 
 .contenido-anuncio p {
     margin: 0;
 
@@ -202,5 +202,12 @@ h4 {
 .ver-todas {
     display: flex;
     justify-content: flex-end;
+}
+
+/** contacto home **/
+
+.imagen-contacto {
+    background-image: url(../img/encuentra.jpg);
+
 }
 
