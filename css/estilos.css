@@ -148,7 +148,6 @@ h4 {
     font-weight: 400;
     text-align: center;
 
-
 }
 
 .iconos-nosotros {
@@ -199,6 +198,24 @@ h4 {
 
 }
 
+.icono-caracteristicas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.icono-caracteristicas li {
+    display: flex;
+
+}
+
+.icono-caracteristicas li img {
+    margin-right: 2rem;
+
+}
+
 .ver-todas {
     display: flex;
     justify-content: flex-end;
@@ -208,6 +225,67 @@ h4 {
 
 .imagen-contacto {
     background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    flex: 1;
+    color: white;
+}
+
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
+/**seccion inferior**/
+
+.seccion-inferior {
+    display: flex;
+    justify-content: space-between;
 
 }
+
+.seccion-inferior .blog {
+    flex-basis: 60%;
+
+}
+
+.seccion-inferior .testimoniales {
+    flex-basis: calc(40% - 2rem);
+
+}
+
+.entrada-blog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+}
+
+.entrada-blog last-of-type {
+    margin-bottom: 0;
+    
+    
+
+}
+.entrada-blog .imagen {
+    flex-basis: 40%;
+
+}
+
+.entrada-blog .texto-entrada {
+    flex-basis: calc(60% - 3rem);
+
+}
+
+.texto-entrada {
+    margin: 0;
+    line-height: 1.2;
+
+}
+
 
