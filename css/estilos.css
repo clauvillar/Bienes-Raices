@@ -88,6 +88,12 @@ h4 {
 }
 
 /* Header */
+
+.site-header {
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+
+}
 .site-header.inicio {
     background-image: url(../img/header.jpg);
     background-position: center center;
@@ -129,7 +135,6 @@ h4 {
     font-size: 1.8rem; /** es igual a 18px **/
     margin-right: 2rem;
 
-
 }
 
 .navegacion a:hover {
@@ -158,7 +163,7 @@ h4 {
 
 .icono {
     flex-basis: calc(33.3% - 1.5rem);
-    text-align: center;
+    text-align: justify;
    
 }
 
@@ -282,10 +287,99 @@ h4 {
 
 }
 
-.texto-entrada {
+.texto-entrada a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.texto-entrada h4 {
     margin: 0;
     line-height: 1.2;
 
 }
 
+.texto-entrada h4::after {
+    content: "";
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #03b11a;
+}
 
+.texto-entrada span {
+    color: #e29404;
+}
+
+/**Testimoniales**/
+
+.testimonial {
+    background-color: #03b11a;
+    font-size: 2.4rem;
+    text-align: justify;
+    line-height: 5rem;
+    padding: 2rem;
+    color: white;
+    border-radius: 2rem;
+      
+}
+
+.testimonial p {
+    text-align: right;
+}
+
+.testimonial blockquote::before {
+    content: " " ;
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
+/**Footer**/
+
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyraight {
+    margin: 0;
+    color: white;
+}
+
+/**INTERNAS**/
+
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-column-gap: 3rem;
+    text-align: justify;
+}
+
+.texto-nosotros {
+    font-weight: 400;
+    margin-right: 2rem;
+
+}
+
+.texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 3rem 0;
+
+}
