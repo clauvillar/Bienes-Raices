@@ -64,6 +64,12 @@ h4 {
     display: block!important;
 }
 
+.contenido-centrado {
+    max-width: 800px;
+    text-align: justify;
+    
+}
+
 /** Botones **/
 
 .boton {
@@ -163,7 +169,7 @@ h4 {
 
 .icono {
     flex-basis: calc(33.3% - 1.5rem);
-    text-align: justify;
+    text-align: center;
    
 }
 
@@ -211,6 +217,7 @@ h4 {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    flex: 1;
     max-width: 500px;
     
 }
@@ -366,18 +373,12 @@ h4 {
 }
 
 /**INTERNAS**/
+/**Nosotros**/
 
 .contenido-nosotros {
     display: grid;
-    grid-template-columns: 35% 65%;
-    grid-column-gap: 3rem;
-    text-align: justify;
-}
-
-.texto-nosotros {
-    font-weight: 400;
-    margin-right: 2rem;
-
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
 }
 
 .texto-nosotros blockquote {
@@ -385,5 +386,14 @@ h4 {
     font-size: 2rem;
     margin: 0;
     padding: 1rem 0;
+
+}
+/**Anuncio**/
+
+.resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 
 }
